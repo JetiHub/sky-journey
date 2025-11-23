@@ -58,3 +58,10 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+.whatsapp-note {
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  opacity: 0.9;
+}
+

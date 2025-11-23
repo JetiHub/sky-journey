@@ -199,8 +199,7 @@ export const en = {
         "Tell us about your group, interests and any special requests.",
     },
     button: "Send inquiry",
-    alert:
-      "Thank you! The form is only a demo now – connect it to email or a backend.",
+    alert: "You’ll be redirected to WhatsApp with your message pre-filled. Just tap Send.",
   },
   footer: {
     location: "Bishkek",
