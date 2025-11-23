@@ -161,18 +161,53 @@
 
 /* Responsive */
 @media (max-width: 840px) {
-  .logo-link {
-    padding: 10px 58px; /* wider on phone */
-  }
-
+  /* hide desktop nav */
   .nav {
     display: none;
   }
 
+  /* show burger */
   .menu-toggle {
     display: flex;
   }
 
+  /*
+    IMPORTANT MOBILE LAYOUT:
+    We want 1 row: [LANG]  [LOGO]  [BURGER]
+    DOM is: logo | nav | header-actions(lang+burger)
+    So we "flatten" header-actions into header-inner on mobile
+  */
+  .header-inner {
+    justify-content: space-between;
+    gap: 10px; /* small spacing between items */
+  }
+
+  .header-actions {
+    display: contents; /* children become flex items of .header-inner */
+  }
+
+  /* order items on the same row */
+  .lang-toggle {
+    order: 1;
+  }
+
+  .logo {
+    order: 2;
+    flex: 1;
+    justify-content: center; /* center logo between lang and burger */
+  }
+
+  .menu-toggle {
+    order: 3;
+  }
+
+  /* fix logo position and size on mobile */
+  .logo-link {
+    margin-left: 0;     /* remove desktop push */
+    padding: 10px 58px; /* wider on phone */
+  }
+
+  /* mobile dropdown menu */
   .nav-mobile {
     display: flex;
     flex-direction: column;

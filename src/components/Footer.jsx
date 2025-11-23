@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container footer-inner">
         {/* LEFT SIDE */}
         <div className="footer-left">
-          © {new Date().getFullYear()} Sky Journey.
+          © {new Date().getFullYear()} Sky Journey
         </div>
 
         {/* RIGHT SIDE */}
