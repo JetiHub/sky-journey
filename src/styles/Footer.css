@@ -1,0 +1,39 @@
+/* Footer */
+
+.footer {
+  border-top: 1px solid rgba(148, 163, 184, 0.3);
+  padding: 1.2rem 0 1.6rem;
+  margin-top: 1rem;
+  background: rgba(3, 7, 18, 0.98);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-left {
+  color: var(--text-muted);
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* JetiHub badge styling */
+.jeti-badge {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(226, 158, 68, 0.12);
+  border: 1px solid rgba(226, 158, 68, 0.45);
+  color: var(--accent);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}

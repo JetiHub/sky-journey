@@ -1,0 +1,47 @@
+:root {
+  --bg: #050816;
+  --bg-alt: #0a1020;
+  --card-bg: #12172a;
+  --accent: #e29e44;
+  --accent-soft: rgba(226, 158, 68, 0.12);
+  --text: #f5f6fb;
+  --text-muted: #a4aac7;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.55);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1e2a4f 0, #050816 45%, #02020a 100%);
+  color: var(--text);
+}
+
+/* Layout wrapper */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main grows to push footer down */
+main {
+  flex: 1;
+}
+
+/* Global container */
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}

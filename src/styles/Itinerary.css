@@ -1,0 +1,46 @@
+.timeline {
+  margin-top: 2rem;
+  border-left: 1px dashed rgba(148, 163, 184, 0.5);
+  padding-left: 1.3rem;
+}
+
+.day {
+  position: relative;
+  margin-bottom: 1.4rem;
+}
+
+.day-marker {
+  position: absolute;
+  left: -1.65rem;
+  top: 0.35rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 0 6px var(--accent-soft);
+}
+
+.day-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.day-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+
+.day-title {
+  margin: 0;
+  font-size: 1.02rem;
+  text-transform: uppercase;
+}
+
+.day p {
+  margin: 0.3rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.93rem;
+}
